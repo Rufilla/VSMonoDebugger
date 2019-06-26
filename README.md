@@ -20,7 +20,7 @@ You have to save a valid SSH connection first!
 - [1] Selects the connection to use for deploying and debugging
 - [2] You can create a additional SSH connection
 - [3] You can remove a SSH connection (The last connection can not be deleted)
-- [4] Enter the remote SSH IP or host name
+- [4] Enter the remote SSH IP or host name (For IPv6 make sure you use the Zone Index separated by %)
 - [5] Enter the SSH port
 - [6] Enter the SSH username
 - [7] Enter the SSH password or private key file passphrase (if there is no password => leave the field empty)
@@ -117,6 +117,13 @@ yourUserName ALL=(ALL) NOPASSWD: /usr/bin/pkill, /usr/bin/mono
 **Visual Studio 2019 shows a warning**
 
 # Version History
+
+## 0.9.4
+**2019-06-26**
+
+- [x] IPv6 Support added for 'Attach to mono debugger (without SSH)'.  Note this required no change for the actual code but
+      the Mono Soft Debugger libraries are now not prebuilt but reference the assemblies that have been modified for IPv6
+      Support: https://github.com/Rufilla/debugger-libs
 
 ## 0.9.3
 **2019-06-20**
