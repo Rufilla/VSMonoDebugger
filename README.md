@@ -124,6 +124,7 @@ yourUserName ALL=(ALL) NOPASSWD: /usr/bin/pkill, /usr/bin/mono
 - [x] IPv6 Support added for 'Attach to mono debugger (without SSH)'.  Note this required no change for the actual code but
       the Mono Soft Debugger libraries are now not prebuilt but reference the assemblies that have been modified for IPv6
       Support: https://github.com/Rufilla/debugger-libs
+- [x] Because of the above this plugin now targets .net 4.7.2.
 
 ## 0.9.3
 **2019-06-20**
